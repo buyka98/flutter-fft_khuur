@@ -312,7 +312,9 @@ public class PitchModel implements PitchInterface {
             int currentIdx = -1;
 
             for (int i = 0; i < targetFrequencies.length; i++) {
+                  FlutterFftPlugin.printError("pitch ${pitchInHz} ${targetFrequencies[i]}");
                 float currentDistance = Math.abs(pitchInHz - targetFrequencies[i]);
+                FlutterFftPlugin.printError("smallest ${currentDistance} ${smallestTargetDistance}");
                 if (currentDistance < smallestTargetDistance) {
                     smallestTargetDistance = currentDistance;
                     targetIdx = i;
