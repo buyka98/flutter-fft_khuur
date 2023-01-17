@@ -441,7 +441,7 @@ public class PitchModel implements PitchInterface {
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     public void getFrequenciesAndOctaves(MethodChannel.Result result) {
-        float A4 = 440;
+        float A4 = 442;
         float a;
         float aSharp;
         float b;
